@@ -1,0 +1,40 @@
+SESSION12
+Bài 6 : Hoàn thiện bộ hồ sơ triển khai nền tảng Smart-Home
+
+Tên lớp: HCM K26 CNTT2
+Môn học: Nhập môn công nghệ thông tin
+Họ và tên: LƯƠNG THANH THƯ
+
+
+Phần 1. Phân tích bảng Excel
+- Bảng xấu: Có ô gộp, thiếu tiêu đề, dòng trống, dữ liệu không thống nhất.
+- Bảng đúng: Mỗi cột là một Field, mỗi dòng là một Record, có tiêu đề rõ ràng, không gộp ô và dễ lọc dữ liệu.
+
+Phần 2. Triển khai học liệu
++ Word–SRS
+- Heading 1: Giới thiệu, Yêu cầu hệ thống, Kết luận.
+- Heading 2: Yêu cầu chức năng, Yêu cầu phi chức năng.
+- Heading 3: Đăng nhập, đăng tin nhà đất, đấu giá, bảo mật thông tin.
+Sử dụng Heading Styles và Auto TOC để tạo mục lục tự động.
+
++ Excel–Quản lý nhà đất
+Các cột gồm: Mã BĐS, Tên nhà đất, Giá thuê, Chiết khấu, Hoa hồng.
+- Giá thuê sau chiết khấu: =C2*(1-D2)
+- Tiền hoa hồng: =C2*E2
+- Tra cứu hoa hồng: =VLOOKUP(A2,$H$2:$I$4,2,FALSE)
+
++ PowerPoint–Pitch Deck
+Gồm 6 slide:
+1. Giới thiệu Smart-Home.
+2. Vấn đề thị trường.
+3. Giải pháp đấu giá trực tuyến.
+4. Khách hàng mục tiêu.
+5. Mô hình doanh thu.
+6. Kế hoạch phát triển và gọi vốn.
+Áp dụng quy tắc 10/20/30: tối đa 10 slide, thuyết trình khoảng 20 phút, cỡ chữ khoảng 30 pt. Mỗi slide có một thông điệp và khoảng trắng hợp lý.
+
+Phần 3. Kiểm thử Excel
+Khi kéo công thức, vùng tra cứu có thể bị dịch chuyển.
+- Công thức sai: =VLOOKUP(A2,H2:I4,2,FALSE)
+- Công thức đúng: =VLOOKUP(A2,$H$2:$I$4,2,FALSE)
+Dấu $ giúp cố định vùng tra cứu khi kéo công thức, tránh trả về kết quả sai.
